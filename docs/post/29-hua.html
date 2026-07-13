@@ -117,9 +117,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/1fd654ab-6b6f-433b-a7c8-78cdeaf0816f"><img width="317" height="2000" alt="Image" src="https://github.com/user-attachments/assets/1fd654ab-6b6f-433b-a7c8-78cdeaf0816f" style="max-width: 100%; height: auto; max-height: 2000px;"></a></p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/6c5eacf5-abe7-4963-af5f-fbe208948db7"><img width="318" height="2000" alt="Image" src="https://github.com/user-attachments/assets/6c5eacf5-abe7-4963-af5f-fbe208948db7" style="max-width: 100%; height: auto; max-height: 2000px;"></a></p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/f8ad09cd-f22b-4660-b998-bcf11796891a"><img width="326" height="2000" alt="Image" src="https://github.com/user-attachments/assets/f8ad09cd-f22b-4660-b998-bcf11796891a" style="max-width: 100%; height: auto; max-height: 2000px;"></a></p>
+<div class="markdown-body" id="postBody"><p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/1fd654ab-6b6f-433b-a7c8-78cdeaf0816f"><img width="119" height="2000" alt="Image" src="https://github.com/user-attachments/assets/1fd654ab-6b6f-433b-a7c8-78cdeaf0816f" style="max-width: 100%; height: auto; max-height: 2000px;; aspect-ratio: 119 / 2000; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/6c5eacf5-abe7-4963-af5f-fbe208948db7"><img width="113" height="2000" alt="Image" src="https://github.com/user-attachments/assets/6c5eacf5-abe7-4963-af5f-fbe208948db7" style="max-width: 100%; height: auto; max-height: 2000px;; aspect-ratio: 113 / 2000; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/f8ad09cd-f22b-4660-b998-bcf11796891a"><img width="109" height="2000" alt="Image" src="https://github.com/user-attachments/assets/f8ad09cd-f22b-4660-b998-bcf11796891a" style="max-width: 100%; height: auto; max-height: 2000px;; aspect-ratio: 109 / 2000; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7c8cf5c4-d433-404b-8842-d25c5671b2f7"><img src="https://github.com/user-attachments/assets/7c8cf5c4-d433-404b-8842-d25c5671b2f7" alt="Image" style="max-width: 100%;"></a></p>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/c1f12b4a-29b8-4e7b-be65-a04f4c12425e"><img src="https://github.com/user-attachments/assets/c1f12b4a-29b8-4e7b-be65-a04f4c12425e" alt="Image" style="max-width: 100%;"></a></p>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/b32b453c-a7a9-455f-ba47-b3b88c55fb0f"><img src="https://github.com/user-attachments/assets/b32b453c-a7a9-455f-ba47-b3b88c55fb0f" alt="Image" style="max-width: 100%;"></a></p>
@@ -148,7 +148,7 @@ if(""!=""){
     var startSite=new Date("");
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
-    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+    document.getElementById("runday").innerHTML="网站运行 "+diffDay+" 天"+" • ";
 }
 </script></div>
 </body>
@@ -193,6 +193,7 @@ document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
 function openComments(){
     cm=document.getElementById("comments");
     cmButton=document.getElementById("cmButton");
+    cmButton.disabled=true;
     cmButton.innerHTML="loading";
     span=document.createElement("span");
     span.setAttribute("class","AnimatedEllipsis");
